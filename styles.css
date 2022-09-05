@@ -1,7 +1,84 @@
-@root {
-  --very-dark-blue: hsl(233, 47%m 7%);
+:root {
+  --very-dark-blue: hsl(233, 47%, 7%);
+  --dark-desaturated-blue: hsl(244, 38%, 16%);
+  --soft-violet: hsl(277, 64%, 61%);
+
+  --white: hsl(0, 0%, 100%);
+  --transparent-white-1: hsl(0, 0%, 100%, 0.75);
+  --transparent-white-2: hsl(0, 0%, 100%, 0.6);
 }
+
+/* ------------- */
+/* ------------- */
+/*      FONT     */
+/* ------------- */
+/* ------------- */
+
+body {
+  font-size: 15px;
+}
+
+.content {
+  color: var(--white);
+}
+
+.content p {
+  color: var(--transparent-white-1);
+}
+.data p {
+  color: var(--transparent-white-2);
+}
+
+/* ------------- */
+/* ------------- */
+/*     Main      */
+/* ------------- */
+/* ------------- */
 
 body {
   background-color: var(--very-dark-blue);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: var(--dark-desaturated-blue);
+  border-radius: 10px;
+  width: 375px;
+  margin: auto;
+}
+
+picture {
+  display: block;
+  border-radius: 10px 10px 0 0;
+  max-width: 100%;
+  height: 275px;
+  background-image: url(assets/image-header-mobile.jpg);
+  background-color: blue;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+picture::after {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: var(--soft-violet);
+  opacity: 0.5;
+  position: absolute;
+}
+
+.content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+
+.text-color {
+  color: var(--soft-violet);
 }
