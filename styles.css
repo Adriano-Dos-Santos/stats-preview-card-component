@@ -14,6 +14,8 @@
 /* ------------- */
 /* ------------- */
 
+
+
 * {
   margin: 0;
   padding: 0;
@@ -46,7 +48,7 @@ h1 {
 
 body {
   background-color: var(--very-dark-blue);
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,12 +61,17 @@ body {
   margin: auto;
 }
 
-img {
+.image {
   max-width: 100%;
+  min-height: 100%;
+  filter: grayscale(1) contrast(130%);
+  mix-blend-mode: multiply;
+  opacity: .8;
 }
 
 .picture {
-  filter: hue-rotate(50deg);
+  display: flex;
+  background: linear-gradient(320deg, var(--soft-violet) 0, #b86fdd 100%);
 }
 
 .content {
@@ -88,6 +95,11 @@ h1 {
   padding: 0 0.4em;
 }
 
+.data-container {
+  display: flex;
+  flex-direction: column;
+  grid-row-gap: 2em;
+}
 
 .data {
   display: flex;
@@ -100,8 +112,9 @@ h1 {
   font-size: 1.9rem;
 }
 .data p {
-  font-size: 1.30rem;
-  font-weight: 100;
+  font-size: 0.85rem;
+  font-weight: lighter;
+  text-transform: uppercase;
 }
 
 /* ------------- */
@@ -111,29 +124,41 @@ h1 {
 /* ------------- */
 
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1240px) {
 
 .container {
   display: flex;
   flex-direction: row-reverse;
-  width: 900px;
+  width: 920px;
 }
-picture {
-  width: 600px;
+.content {
+  text-align: start;
+  justify-content: center;
+  align-content: center;
+  padding: 0 4em 0 3em;
 }
 
-MAMACORkasksaakskask
-.content {
+.content p,
+.content h1 {
+  padding: 0;
 }
+
+.content h1 {
+  padding: 1em 0 0 0;
+}
+
+picture {
+  width: 100%;
+}
+
 .data-container {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1em 1.3em 1em 0;
 }
 
-
-
- * {
-   outline: 1px solid yellow;
- }
-
-
+.data h2 {
+  font-size: 1.5rem;
+}
 }
