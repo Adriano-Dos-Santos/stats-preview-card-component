@@ -60,7 +60,7 @@ body {
 }
 
 .container {
-  background-image: linear-gradient(90deg, var(--dark-desaturated-blue) 10%, hsl(249, 38%, 26%) 40%);
+  background-image: linear-gradient(130deg, var(--dark-desaturated-blue) 20%, hsl(249, 38%, 25%) 100%);
   border-radius: 10px;
   width: 375px;
   margin: auto;
@@ -138,6 +138,7 @@ h1 {
   display: flex;
   flex-direction: row-reverse;
   width: 1120px;
+  background-image: linear-gradient(90deg, var(--dark-desaturated-blue) 10%, hsl(249, 38%, 26%) 40%);
 }
 .content {
   text-align: start;
