@@ -93,7 +93,7 @@ body {
   color: var(--soft-violet);
 }
 h1 {
-  padding: 0 0.4em;
+  padding: 0 2em 0 0;
   width: 100%;
 }
 
@@ -177,4 +177,5 @@ img {
 .data h2 {
   font-size: 1.5rem;
 }
+
 }
