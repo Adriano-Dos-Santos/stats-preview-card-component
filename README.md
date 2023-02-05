@@ -20,8 +20,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./assets/screenshot/Screenshot.1.png)
-![](./assets/screenshot/Screenshot.2.png)
+![](./assets/screenshot/Screenshot_1.png)
+![](./assets/screenshot/Screenshot_2.png)
 
 ### Links
 
